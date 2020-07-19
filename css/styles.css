@@ -19,12 +19,14 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
+  width: 1170px;
   outline: 2px solid tomato;
 }
 
@@ -88,21 +90,32 @@ body {
 }
 
 /* Hero */
+
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
-  background-color: var(--accent-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  background-color: var(--accent-color);
 }
 /* Section */
 .section {
   color: var(--primary-text-color);
 }
 .section-title {
+  margin-bottom: 50px;
+  margin-top: 0;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.66;
@@ -110,7 +123,19 @@ body {
   letter-spacing: 0.03em;
 }
 /* Features */
+
+.container .heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.feature-list .image {
+  margin-bottom: 30px;
+}
+
 .feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -119,6 +144,9 @@ body {
   text-transform: uppercase;
 }
 .feature-list .description {
+  margin-top: 0;
+  margin-bottom: 0px;
+
   color: var(--title-text-color);
 }
 /* Works */
