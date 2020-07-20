@@ -41,8 +41,8 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   width: 1170px;
   outline: 2px solid tomato;
@@ -79,6 +79,7 @@ body {
 .site-nav {
   background-color: tomato;
   display: flex;
+  margin-left: 85px;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -108,6 +109,11 @@ body {
 /* Address navigation */
 .address-nav {
   display: flex;
+  margin-left: auto;
+}
+
+.address-nav .item + .item {
+  margin-left: 30px;
 }
 
 .address-nav .link {
@@ -163,7 +169,9 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.feature-list {
+  display: flex;
+}
 .feature-list .title {
   margin-top: 30px;
   margin-bottom: 10px;
