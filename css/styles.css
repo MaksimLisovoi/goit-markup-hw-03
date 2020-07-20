@@ -22,10 +22,28 @@ body {
   padding: 0;
   margin: 0;
 }
+/* Section */
+.section {
+  color: var(--primary-text-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+  margin-bottom: 50px;
+  margin-top: 0;
 
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
   width: 1170px;
   outline: 2px solid tomato;
 }
@@ -50,10 +68,28 @@ body {
 /* Page-header */
 
 .page-header {
-  background-color: var(--secondary-bacground-color);
+  background-color: var(--primary-white-color);
 }
 /* Site navigation */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  background-color: tomato;
+  display: flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+
+  padding-bottom: 32px;
+  padding-top: 32px;
+
   text-decoration: none;
   color: var(--primary-text-color);
 
@@ -70,9 +106,18 @@ body {
   color: var(--accent-color);
 }
 /* Address navigation */
+.address-nav {
+  display: flex;
+}
+
 .address-nav .link {
   font-style: normal;
   color: var(--title-text-color);
+  text-decoration: none;
+}
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--accent-color);
 }
 .address-footer {
   color: var(--primary-white-color);
@@ -108,32 +153,19 @@ body {
 
   background-color: var(--accent-color);
 }
-/* Section */
-.section {
-  color: var(--primary-text-color);
-}
-.section-title {
-  margin-bottom: 50px;
-  margin-top: 0;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.66;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 /* Features */
+.section.features {
+  padding-bottom: 0;
+}
 
 .container .heading {
   margin-top: 0;
   margin-bottom: 0;
 }
-.feature-list .image {
-  margin-bottom: 30px;
-}
 
 .feature-list .title {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -162,7 +194,14 @@ body {
 }
 
 /* Our team */
+.section.our-team {
+  background-color: var(--secondary-bacground-color);
+}
+
 .team-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -170,6 +209,9 @@ body {
   letter-spacing: 0.03em;
 }
 .team-list .speciality {
+  display: inline-block;
+  margin-bottom: 16px;
+
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 16px;
