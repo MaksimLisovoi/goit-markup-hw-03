@@ -325,7 +325,11 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--primary-text-color);
+
+  margin-bottom: 4px;
+  margin-top: 0;
 }
 .portfolio-description {
   font-weight: 400;
@@ -343,7 +347,10 @@ footer {
   background-color: var(--accent-color);
   margin: 0;
 }
-
+.gallery-form {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
 /* Filter */
 
 .filter {
