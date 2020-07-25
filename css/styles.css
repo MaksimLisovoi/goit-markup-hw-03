@@ -223,6 +223,9 @@ body {
 }
 
 /* Our team */
+.photo {
+  display: block;
+}
 
 .section.our-team {
   background-color: var(--secondary-background-color);
